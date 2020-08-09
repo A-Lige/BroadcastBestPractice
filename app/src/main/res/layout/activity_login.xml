@@ -51,11 +51,27 @@
             android:layout_gravity="center_vertical"
             android:inputType="textPassword"/>
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@id/b"
+        app:layout_constraintTop_toBottomOf="@id/b">
+        <CheckBox
+            android:id="@+id/remember_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住密码    "
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
     <Button
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="Login"
-        app:layout_constraintStart_toStartOf="@id/b"
-        app:layout_constraintTop_toBottomOf="@id/b"/>
+        app:layout_constraintStart_toStartOf="@id/c"
+        app:layout_constraintTop_toBottomOf="@id/c"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
